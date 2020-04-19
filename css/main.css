@@ -1,0 +1,119 @@
+html {
+  font-family: 'Mada', sans-serif;
+  color: #393E46;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner-content {
+  display: inline-block;
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.hidden-on-small {
+  display: none;
+}
+
+.responsive-round {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.responsive-rectangle {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, button, legend, header a, thead th {
+  font-family: 'Nunito', sans-serif;
+  color: #415504;
+}
+
+.ratingcard, .plancard {
+  border-radius: 10px;
+  border: 3px solid #415504;
+}
+
+button {
+  background-color: #415504;
+  color: #fff;
+  border: 3px solid #415504;
+}
+
+.plancard a:hover, button:hover {
+  background: #fff;
+  color: #415504;
+  border: 3px solid #415504;
+  border-radius: 5px;
+}
+
+.plancard a {
+  text-align: center;
+  color: #fff;
+  background: #415504;
+  padding: 10px;
+  max-width: 170px;
+  border-radius: 5px;
+  font-family: 'Nunito', sans-serif;
+  border: 3px solid #415504;
+}
+
+fieldset {
+  border: 0;
+}
+
+.banner{
+  background:url('../images/bannerbigscreen.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.pad-r {
+  padding-right: .5rem;
+}
+
+textarea {
+  height: 5em;
+  width: 100%;
+}
+
+.form-wrapper, .table-wrapper {
+  background: #F3FADD;
+}
+
+form, .featurestable {
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 25em) {
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+}
+
+@media only screen and (min-width: 38em) {
+
+header {
+  display: inline;
+}
+
+nav {
+  float: right;
+}
+
+
+}
