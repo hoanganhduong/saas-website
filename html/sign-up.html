@@ -11,16 +11,22 @@
   <link href="https://fonts.googleapis.com/css?family=Mada|Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <a href="index.html"><img class="logo" src="../images/logo.svg" alt="" width="150"></a>
-    <nav class="right">
-      <ul class="list-group list-group-inline gutter-1-8 pad-t">
-        <li><a class="island-1-4" href="tour.html">Features</a></li>
-        <li><a class="island-1-4" href="sign-up.html">Sign-up</a></li>
-      </ul>
-    </nav>
+  <heade role="banenr"r>
+    <div class="skip-links">
+      <a href="#nav">Jump to navigation </a>
+      <a href="#main">Jump to main content</a>
+    </div>
+    <div class="header">
+      <a class="logotag" href="index.html"><img class="logo" src="../images/logo.svg" alt="" width="150"></a>
+      <nav id="nav" class="center-flow navigation">
+        <ul class="list-group list-group-inline gutter-1-8 pad-t">
+          <li><a class="island-1-4" href="tour.html">Features</a></li>
+          <li><a class="island-1-4" href="sign-up.html">Sign-up</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main class="form-wrapper">
+  <main id="main" class="form-wrapper" role="main">
     <h1 class="pad-t-2 pad-b-1-2 push-0 zetta center-text">Sign up now for amazing up-coming experiences with freshMEAL!</h1>
     <div class="island">
       <form class="pad-t-2 pad-b-2 gutter-1-2" action="index.html" method="post">
@@ -164,5 +170,14 @@
       </form>
     </div>
   </main>
+  <footer role="contentinfo">
+    <nav class="island pad-t-2">
+      <ul class="list-group milli">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tour.html">Features</a></li>
+        <li><a href="sign-up.html">Sign-up</a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>

@@ -11,16 +11,22 @@
   <link href="https://fonts.googleapis.com/css?family=Mada|Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <a href="index.html"><img class="logo" src="../images/logo.svg" alt="" width="150"></a>
-    <nav class="gutter pad-t">
-      <ul class="list-group list-group-inline">
-        <li><a class="island-1-4" href="tour.html">Features</a></li>
-        <li><a class="island-1-4" href="sign-up.html">Sign-up</a></li>
-      </ul>
-    </nav>
+  <div class="skip-links">
+    <a href="#nav">Jump to navigation </a>
+    <a href="#main">Jump to main content</a>
+  </div>
+  <header role="banner">
+    <div class="header">
+      <a class="logotag" href="index.html"><img class="logo" src="../images/logo.svg" alt="" width="150"></a>
+      <nav id="nav" role="navigation" class="center-flow navigation">
+        <ul class="list-group list-group-inline gutter-1-8 pad-t">
+          <li><a class="island-1-4" href="tour.html">Features</a></li>
+          <li><a class="island-1-4" href="sign-up.html">Sign-up</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
+  <main role="main" id="main">
     <div class="banner">
       <div class="banner-content center-flow">
         <h1 class="tenamega">Get 5 Free Meals</h1>
@@ -31,34 +37,34 @@
       </div>
     </div>
     <section class="mainfeatures gutter-2">
-      <h2 class="center-flow">Why freshMEAL?</h2>
-      <div class="card featurecard grid center-content-horizontal">
-        <div class="unit xs-1 s-1 m-1 l-1-2">
-          <img class="embed responsive-round" src="../images/healthyrecipes.png" alt="">
+      <h2 class="center-flow pad-t-2 push-2">Why freshMEAL?</h2>
+      <div class="card featurecard grid center-content-horizontal island">
+        <div class="unit center-img xs-1 s-1 m-1 l-1-2 pad-r">
+          <img role="presentation" class="embed responsive-round" src="../images/healthyrecipes.png" alt="">
         </div>
-        <div class="content unit xs-1 s-1 m-1 l-1-2 center-content-vertical">
-          <img src="../images/icon_healthy.svg" alt="" width="100">
+        <div class="content unit xs-1 s-1 m-1 l-1-2 center-content-vertical center-flow pad-t pad-l">
+          <img role="presentation"  src="../images/icon_healthy.svg" alt="" width="100">
           <h3>Healthy Recipes</h3>
           <p>Our in-house culinary team uses premium ingredients to create healthy and unique menus.</p>
         </div>
       </div>
-      <div class="card featurecard grid center-content-horizontal">
-        <div class="unit xs-1 s-1 m-1 l-1-2">
-          <img class="embed responsive-round" src="../images/freshingredients.png" alt="">
+      <div class="card featurecard grid center-content-horizontal island">
+        <div class="unit center-img xs-1 s-1 m-1 l-1-2 pad-r">
+          <img role="presentation"  class="embed responsive-round" src="../images/freshingredients.png" alt="">
         </div>
-        <div class="content unit xs-1 s-1 m-1 l-1-2 center-content-vertical">
-          <img src="../images/icon_freshingredients.svg" alt="" width="150">
+        <div class="content unit xs-1 s-1 m-1 l-1-2 center-content-vertical center-flow pad-t-2 pad-l">
+          <img role="presentation"  src="../images/icon_freshingredients.svg" alt="" width="150">
           <h3>Fresh Ingredients</h3>
           <p>Like fresh produce, sustainable seafood and exclusive spice blends.</p>
         </div>
       </div>
-      <div class="card featurecard grid center-content-horizontal">
-        <div class="unit xs-1 s-1 m-1 l-1-2">
-          <img class="embed responsive-round"src="../images/convenience.png" alt="">
+      <div class="card featurecard grid center-content-horizontal island">
+        <div class="embed center-img unit xs-1 s-1 m-1 l-1-2 pad-r">
+          <img role="presentation"  class="responsive-round center-block"src="../images/convenience.png" alt="">
         </div>
-        <div class="content unit xs-1 s-1 m-1 l-1-2 center-content-vertical">
+        <div class="content unit xs-1 s-1 m-1 l-1-2 center-flow pad-t-2 pad-l">
           <div class="">
-            <img src="../images/icon_convenience.svg" alt="" width="120">
+            <img role="presentation"  src="../images/icon_convenience.svg" alt="" width="120">
             <h3>Convenience</h3>
           </div>
           <p>Skip grocery store frustrations with everything you need sent to your doorstep!</p>
@@ -66,87 +72,87 @@
       </div>
     </section>
     <section class="planoptions grid grid-stretch gutter-1-2">
-      <h2 class="center-flow unit xs-1 s-1 m-1 l-1">Choose your plan</h2>
+      <h2 class="center-flow unit xs-1 s-1 m-1 l-1 push-2 pad-t-2">Choose your plan</h2>
       <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-4 unit-content-distribute content-fill">
-        <div class="island-1-2 card plancard unit-content-distribute content-fill">
-          <h3 class="mega">Basic Plan</h3>
-          <img class="responsive-rectangle" src="../images/basicplan.png" alt="">
-          <p class="content-fill push-1-2">All of our classic recipes plus our time-saving Easy Prep recipes with fresh pre-cut ingredients!</p>
-          <a class="milli" href="sign-up.html">GET STARTED</a>
+        <div class="island-1-2 card plancard unit-content-distribute content-fill center-flow">
+          <h3 class="mega push-1-2">Basic Plan</h3>
+          <img role="presentation"  class="responsive-rectangle" src="../images/basicplan.png" alt="">
+          <p class="content-fill push-1-2 pad-t-1-2">All of our classic recipes plus our time-saving Easy Prep recipes with fresh pre-cut ingredients!</p>
+          <a class="milli center-block" href="sign-up.html">GET STARTED</a>
         </div>
       </div>
       <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-4 unit-content-distribute content-fill">
-        <div class="island-1-2 card plancard unit-content-distribute content-fill">
-          <h3 class="mega">Premium Plan</h3>
-          <img class="responsive-rectangle" src="../images/premiumplan.png" alt="">
-          <p class="content-fill push-1-2">Unique ingredients and recipes for a culinary adventure.</p>
-          <a class="milli" href="sign-up.html">GET STARTED</a>
+        <div class="island-1-2 card plancard unit-content-distribute content-fill center-flow">
+          <h3 class="mega push-1-2">Premium Plan</h3>
+          <img role="presentation"  class="responsive-rectangle" src="../images/premiumplan.png" alt="">
+          <p class="content-fill push-1-2 pad-t-1-2">Unique ingredients and recipes for a culinary adventure.</p>
+          <a class="milli center-block" href="sign-up.html">GET STARTED</a>
         </div>
       </div>
       <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-4 unit-content-distribute content-fill">
-        <div class="island-1-2 card plancard unit-content-distribute content-fill">
-          <h3 class="mega">Family Plan</h3>
-          <img class="responsive-rectangle" src="../images/familyplan.png" alt="">
-          <p class="content-fill push-1-2">Recipes the whole family will love.</p>
-          <a class="milli" href="sign-up.html">GET STARTED</a>
+        <div class="island-1-2 card plancard unit-content-distribute content-fill center-flow">
+          <h3 class="mega push-1-2">Family Plan</h3>
+          <img role="presentation"  class="responsive-rectangle" src="../images/familyplan.png" alt="">
+          <p class="content-fill push-1-2 pad-t-1-2">Recipes the whole family will love.</p>
+          <a class="milli center-block" href="sign-up.html">GET STARTED</a>
         </div>
       </div>
       <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-4 unit-content-distribute content-fill">
-        <div class="island-1-2 card plancard unit-content-distribute content-fill">
-          <h3 class="mega">Veggie Plan</h3>
-          <img class="responsive-rectangle" src="../images/veggieplan.png" alt="">
-          <p class="content-fill push-1-2">100% vegetarian recipes with fresh, seasonal ingredients.</p>
-          <a class="milli" href="sign-up.html">GET STARTED</a>
+        <div class="island-1-2 card plancard unit-content-distribute content-fill center-flow">
+          <h3 class="mega push-1-2">Veggie Plan</h3>
+          <img role="presentation"  class="responsive-rectangle" src="../images/veggieplan.png" alt="">
+          <p class="content-fill push-1-2 pad-t-1-2">100% vegetarian recipes with fresh, seasonal ingredients.</p>
+          <a class="milli center-block" href="sign-up.html">GET STARTED</a>
         </div>
       </div>
     </section>
     <section class="rating grid gutter-1-2">
-      <h2 class="center-flow unit xs-1 s-1 m-1 l-1">What are our customers saying?</h2>
-      <div class="island-1-8 unit xs-1 s-1 m-1-3 l-1-3 unit-content-distribute">
+      <h2 class="center-flow unit xs-1 s-1 m-1 l-1 push-2 pad-t-2">What are our customers saying?</h2>
+      <div class="island-1-4 unit xs-1 s-1 m-1-3 l-1-3 unit-content-distribute">
         <div class="island-1-2 unit-content-distribute content-fill card ratingcard ">
           <h3 class="mega">Stephanie</h3>
           <p class="content-fill">My husband and daughter clean their plates every meal and tell me how delicious it was. And our financial budget has been cut in half. Honestly I love this company and I am so grateful for you. Thank you so much.</p>
           <div class="starrating">
-            <img src="../images/starfilled.svg" alt="" width="15">
-            <img src="../images/starfilled.svg" alt="" width="15">
-            <img src="../images/starfilled.svg" alt="" width="15">
-            <img src="../images/starfilled.svg" alt="" width="15">
-            <img src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
           </div>
         </div>
       </div>
-      <div class="island-1-8 unit xs-1 s-1 m-1-3 l-1-3 unit-content-distribute">
+      <div class="island-1-4 unit xs-1 s-1 m-1-3 l-1-3 unit-content-distribute">
         <div class="island-1-2 unit-content-distribute content-fill card ratingcard ">
           <h3 class="mega">David</h3>
           <p class="content-fill">freshMEAL has allowed me to enjoy cooking, eat better and save money! I am not making unnecessary purchases at the grocery store and overspending. Preparation of meals is quick and easy and the food is delicious!!!!</p>
           <div class="starrating">
-            <img src="../images/starfilled.svg" alt="" width="15">
-            <img src="../images/starfilled.svg" alt="" width="15">
-            <img src="../images/starfilled.svg" alt="" width="15">
-            <img src="../images/starfilled.svg" alt="" width="15">
-            <img src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
           </div>
         </div>
       </div>
-      <div class="island-1-8 unit xs-1 s-1 m-1-3 l-1-3 unit-content-distribute">
+      <div class="island-1-4 unit xs-1 s-1 m-1-3 l-1-3 unit-content-distribute">
         <div class="island-1-2 unit-content-distribute content-fill card ratingcard ">
           <h3 class="mega">Maggie </h3>
           <p class="content-fill">Amazing recipes! Love that all the planning has been done for me.</p>
           <div class="starrating">
-            <img src="../images/starfilled.svg" alt="" width="15">
-            <img src="../images/starfilled.svg" alt="" width="15">
-            <img src="../images/starfilled.svg" alt="" width="15">
-            <img src="../images/starfilled.svg" alt="" width="15">
-            <img src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  role="presentation"  src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
+            <img role="presentation"  src="../images/starfilled.svg" alt="" width="15">
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
+  <footer role="contentinfo" class="pad-t-2">
+    <nav class="island pad-t-2">
+      <ul class="list-group milli">
+        <li><a href="index.html">Home</a></li>
         <li><a href="tour.html">Features</a></li>
         <li><a href="sign-up.html">Sign-up</a></li>
       </ul>
