@@ -44,6 +44,10 @@ h1, h2, h3, button, legend, a, thead th, caption {
   color: #415504;
 }
 
+nav a:hover {
+  color: #a7d129;
+}
+
 .ratingcard, .plancard {
   border-radius: 10px;
   border: 3px solid #415504;
@@ -110,9 +114,15 @@ textarea {
 .form-wrapper, .table-wrapper, .ratingcard {
   background: #f3fadd;
 }
-
+/* .homeBtn{
+  background-color: #fff;
+      border: none;
+}
+.homeBtn:hover{
+    background-color: #fff;
+    border: none;
+} */
 .logotag {
-  color: #fff;
   display: flex;
   justify-content: center;
 }
