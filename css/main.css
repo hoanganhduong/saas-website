@@ -39,7 +39,7 @@ a:focus {
   height: auto;
 }
 
-h1, h2, h3, button, legend, header a, thead th {
+h1, h2, h3, button, legend, a, thead th {
   font-family: 'Nunito', sans-serif;
   color: #415504;
 }
@@ -55,14 +55,14 @@ button {
   border: 3px solid #415504;
 }
 
-.plancard a:hover, button:hover {
+.plancard a:hover, .banner a:hover {
   background: #fff;
   color: #415504;
   border: 3px solid #415504;
   border-radius: 5px;
 }
 
-.plancard a {
+.plancard a, .banner a {
   text-align: center;
   color: #fff;
   background: #415504;
