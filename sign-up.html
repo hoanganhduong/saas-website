@@ -11,14 +11,14 @@
   <link href="https://fonts.googleapis.com/css?family=Mada|Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="skip-links">
-    <a href="#nav">Jump to navigation </a>
-    <a href="#main">Jump to main content</a>
-  </div>
+  <ul class="skip-links">
+    <li><a href="#nav">Jump to navigation </a></li>
+    <li><a href="#main">Jump to main content</a></li>
+  </ul>
   <header role="banner">
     <div class="header">
-      <a class="logotag" href="index.html"><img class="logo" src="./images/logo.svg" alt="" width="150"></a>
-      <nav id="nav" class="center-flow navigation">
+      <a class="logotag" href="index.html"><img class="logo" src="./images/logo.svg" alt="" width="150">Home</a>
+      <nav id="nav" class="center-flow" role="navigation">
         <ul class="list-group list-group-inline gutter-1-8 pad-t">
           <li><a class="island-1-4" href="tour.html">Features</a></li>
           <li><a class="island-1-4" href="sign-up.html">Sign-up</a></li>
@@ -27,150 +27,156 @@
     </div>
   </header>
   <main id="main" class="form-wrapper" role="main">
-    <h1 class="pad-t-2 pad-b-1-2 push-0 zetta center-text">Sign up now for amazing up-coming experiences with freshMEAL!</h1>
-    <div class="island">
-      <form class="pad-t-2 pad-b-2 gutter-1-2" action="index.html" method="post">
-        <fieldset>
-          <legend class="mega gutter-1-2">Account Details</legend>
-          <div class="grid">
-            <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
-              <label class="bold" for="name">Full Name</label>
-              <input type="text" id="name" value="" required>
-            </div>
-            <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
-              <label class="bold" for="phone">Phone Number</label>
-              <input type="tel" id="phone" value="" required>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
-              <label class="bold" for="email">Email</label>
-              <input type="email" id="email" value="" required>
-            </div>
-            <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
-              <label class="bold" for="plan">Choose Your Plan</label>
-              <select class="" id="for">
-                <option value="">Select your plan</option>
-                <option>Basic</option>
-                <option>Premium</option>
-                <option>Family</option>
-                <option>Veggie</option>
-              </select>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
-              <label class="bold" for="password">Password</label>
-              <input type="password" id="password" value="" required>
-            </div>
-            <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
-              <label class="bold" for="confirm">Confirm Your Password</label>
-              <input type="password" id="confirm" value="" required>
-            </div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend class="mega gutter-1-2">Shipping Address</legend>
-          <div class="grid">
-            <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
-              <div class="grid">
-                <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 pad-r">
-                  <label class="bold" for="unit">Unit</label>
-                  <input type="text" id="unit" value="" required>
-                </div>
-                <div class="unit xs-2-3 s-2-3 m-2-3 l-2-3">
-                  <label class="bold" for="street">Street</label>
-                  <input type="text"id="street" value="" required>
-                </div>
+    <section>
+      <h1 class="pad-t-2 pad-b-1-2 push-0 zetta center-text">Sign up now for amazing up-coming experiences with freshMEAL!</h1>
+      <article class="island">
+        <h2 class="center-text italic">Fill in the form below!</h2>
+        <form class="pad-t-2 pad-b-2 gutter-1-2" action="http://formspree.io/hoan0095@algonquinlive.com" method="POST">
+          <fieldset>
+            <legend class="mega gutter-1-2">Account Details</legend>
+            <div class="grid">
+              <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
+                <label class="bold" for="name">Full Name</label>
+                <input type="text" id="name" name="name" value="" required>
+              </div>
+              <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
+                <label class="bold" for="phone">Phone Number</label>
+                <input type="tel" id="phone" value="" required>
               </div>
             </div>
-            <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
-              <label class="bold" for="city">City</label>
-              <input type="text"id="city" value="" required>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
-              <label class="bold" for="province">Province</label>
-              <select id="province" required>
-                <option value="">Select your province</option>
-                <option>Alberta</option>
-                <option>British Columbia</option>
-                <option>Manitoba</option>
-                <option>New Brunswick</option>
-                <option>Newfoundland & Labrador</option>
-                <option>Northwest Territories</option>
-                <option>Nova Scotia</option>
-                <option>Nunavut</option>
-                <option>Ontario</option>
-                <option>Prince Edward Island</option>
-                <option>Québec</option>
-                <option>Saskatchewan</option>
-                <option>Yukon</option>
-              </select>
-            </div>
-            <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
-              <label class="bold" for="postal">Postal Code</label>
-              <input type="text" id="postal" value="" required>
-            </div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend class="mega gutter-1-2">Are you allergic to these food below?</legend>
-          <div class="grid island-1-4">
-            <div class="unit xs-1-2 s-1-2">
-              <div class="grid">
-                <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
-                  <input type="checkbox" id="allergy1" value="">
-                  <label class="bold" for="allergy1">Milk</label>
-                </div>
-                <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
-                  <input type="checkbox" id="allergy2" value="">
-                  <label class="bold" for="allergy2">Eggs</label>
-                </div>
-                <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
-                  <input type="checkbox" id="allergy3" value="">
-                  <label class="bold" for="allergy3">Soy</label>
-                </div>
-                <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
-                  <input type="checkbox" id="allergy4" value="">
-                  <label class="bold" for="allergy4">Peanuts</label>
-                </div>
+            <div class="grid">
+              <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
+                <label class="bold" for="email">Email</label>
+                <input type="email" id="email" value="" required>
+              </div>
+              <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
+                <label class="bold" for="plan">Choose Your Plan</label>
+                <select id="plan">
+                  <option value="">Select your plan</option>
+                  <option>Basic</option>
+                  <option>Premium</option>
+                  <option>Family</option>
+                  <option>Veggie</option>
+                </select>
               </div>
             </div>
-            <div class="unit xs-1-2 s-1-2 pad-b-1-4">
-              <div class="grid">
-                <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
-                  <input type="checkbox" id="allergy5" value="">
-                  <label class="bold" for="allergy5">Wheat</label>
-                </div>
-                <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
-                  <input type="checkbox" id="allergy6" value="">
-                  <label class="bold" for="allergy6">Fish</label>
-                </div>
-                <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
-                  <input type="checkbox" id="allergy7" value="">
-                  <label class="bold" for="allergy7">Shellfish</label>
-                </div>
-                <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
-                  <input type="checkbox" id="allergy8" value="">
-                  <label class="bold" for="allergy8">None</label>
-                </div>
+            <div class="grid">
+              <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
+                <label class="bold" for="password">Password</label>
+                <input type="password" id="password" value="" required>
+              </div>
+              <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
+                <label class="bold" for="confirm">Confirm Your Password</label>
+                <input type="password" id="confirm" value="" required>
               </div>
             </div>
-            <div class="unit xs-1 s-1">
-              <label class="bold" for="allergy9">Others</label>
-              <textarea id="allergy9" value=""></textarea>
+          </fieldset>
+          <fieldset>
+            <legend class="mega gutter-1-2">Shipping Address</legend>
+            <div class="grid">
+              <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
+                <div class="grid">
+                  <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 pad-r">
+                    <label class="bold" for="unit">Unit</label>
+                    <input type="text" id="unit" value="" required>
+                  </div>
+                  <div class="unit xs-2-3 s-2-3 m-2-3 l-2-3">
+                    <label class="bold" for="street">Street</label>
+                    <input type="text" id="street" value="" required>
+                  </div>
+                </div>
+              </div>
+              <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
+                <label class="bold" for="city">City</label>
+                <input type="text" id="city" value="" required>
+              </div>
             </div>
+            <div class="grid">
+              <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
+                <label class="bold" for="province">Province</label>
+                <select id="province" required>
+                  <option value="">Select your province</option>
+                  <option>Alberta</option>
+                  <option>British Columbia</option>
+                  <option>Manitoba</option>
+                  <option>New Brunswick</option>
+                  <option>Newfoundland & Labrador</option>
+                  <option>Northwest Territories</option>
+                  <option>Nova Scotia</option>
+                  <option>Nunavut</option>
+                  <option>Ontario</option>
+                  <option>Prince Edward Island</option>
+                  <option>Québec</option>
+                  <option>Saskatchewan</option>
+                  <option>Yukon</option>
+                </select>
+              </div>
+              <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
+                <label class="bold" for="postal">Postal Code</label>
+                <input type="text" id="postal" value="" required>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="mega gutter-1-2">Are you allergic to these food below?</legend>
+            <div class="grid island-1-4">
+              <div class="unit xs-1-2 s-1-2">
+                <div class="grid">
+                  <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
+                    <input type="checkbox" id="allergy1" value="">
+                    <label class="bold" for="allergy1">Milk</label>
+                  </div>
+                  <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
+                    <input type="checkbox" id="allergy2" value="">
+                    <label class="bold" for="allergy2">Eggs</label>
+                  </div>
+                  <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
+                    <input type="checkbox" id="allergy3" value="">
+                    <label class="bold" for="allergy3">Soy</label>
+                  </div>
+                  <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
+                    <input type="checkbox" id="allergy4" value="">
+                    <label class="bold" for="allergy4">Peanuts</label>
+                  </div>
+                </div>
+              </div>
+              <div class="unit xs-1-2 s-1-2 pad-b-1-4">
+                <div class="grid">
+                  <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
+                    <input type="checkbox" id="allergy5" value="">
+                    <label class="bold" for="allergy5">Wheat</label>
+                  </div>
+                  <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
+                    <input type="checkbox" id="allergy6" value="">
+                    <label class="bold" for="allergy6">Fish</label>
+                  </div>
+                  <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
+                    <input type="checkbox" id="allergy7" value="">
+                    <label class="bold" for="allergy7">Shellfish</label>
+                  </div>
+                  <div class="unit xs-1 s-1 m-1 l-1-4 island-1-8">
+                    <input type="checkbox" id="allergy8" value="">
+                    <label class="bold" for="allergy8">None</label>
+                  </div>
+                </div>
+              </div>
+              <div class="unit xs-1 s-1">
+                <label class="bold" for="allergy9">Others</label>
+                <textarea id="allergy9"></textarea>
+              </div>
+            </div>
+          </fieldset>
+          <div class="center-flow">
+            <button type="submit">SIGN UP</button>
           </div>
-        </fieldset>
-        <div class="center-flow">
-          <button type="submit" name="button">SIGN UP</button>
-        </div>
-      </form>
-    </div>
+        </form>
+      </article>
+    </section>
   </main>
   <footer role="contentinfo">
+    <div class="embed embed-16by9 hidden">
+      <img role="presentation" class="embed-item" src="images/bannerbigscreen.jpg" alt="">
+    </div>
     <nav class="island pad-t-2">
       <ul class="list-group milli">
         <li><a href="index.html">Home</a></li>
